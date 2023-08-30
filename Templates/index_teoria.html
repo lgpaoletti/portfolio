@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> <!-- opening text -->
+<head>
+  <title>LUCA GIORGIO PAOLETTI</title>
+  <link rel="stylesheet" type="text/css" href="static/style.css"> <!-- it's a type of text and href is used to say where it is located -->
+  <!-- visto che è nella stessa cartella scriviamo style.css -->
+  <!-- rel is the relationship -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='bolt.ico') }}">
+  <!-- this is for favicon images which must be in the static folder-->
+  <!--{{blablabla}} are needed to evaluate what's inside as python -->
+</head>
+<body>
+  I AM A WEB MASTER
+  {{name}}
+  {{post_id}}
+  <!--- if I search for 'http://127.0.0.1:5000/luca/2' I obtain I AM A WEB MASTER luca 2-->
+  <!--{{blablabla}} se le metto qua e faccio 4+5, sulla web page avrò 9 -->
+  <script src="static/script.js"></script> 
+  <!-- the js file is usaully inserted in the body, in the script, src stands for source -->
+</body>
+</html> <!-- closing text, with / -->
+
